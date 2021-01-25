@@ -1,0 +1,31 @@
+@charset 'utf-8';
+
+$img-path: '../../../img';
+@import '../../core/core';
+@import '../../foundation/_placeholder/placeholder';
+
+@import 'accordion/block';
+@import 'box/block';
+@import 'btn-box/block';
+@import 'btn/block';
+@import 'container/block';
+@import 'faq/block';
+@import 'information/block';
+@import 'items/block';
+@import 'media-text/block';
+@import 'panels/block';
+@import 'section-break-the-grid/block';
+@import 'section-side-heading/block';
+@import 'section-with-image/block';
+@import 'section/block';
+@import 'step/block';
+
+.c-row[data-columns]:not([data-columns="1"]) {
+	@include _media-max(sm) {
+		@include _row--margin(.5);
+
+		> .c-row__col {
+			@include _row__col--margin(.5);
+		}
+	}
+}

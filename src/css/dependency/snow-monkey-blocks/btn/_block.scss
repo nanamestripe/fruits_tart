@@ -1,0 +1,12 @@
+.smb-btn {
+  background-color: var-color-accent();
+}
+
+.smb-btn-wrapper.is-style-ghost .smb-btn {
+  border-color: var-color-accent();
+  color: var-color-accent();
+}
+
+.smb-btn-wrapper.is-style-text .smb-btn {
+  color: var-color-accent();
+}

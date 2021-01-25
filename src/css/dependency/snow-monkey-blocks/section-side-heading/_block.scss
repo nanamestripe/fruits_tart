@@ -1,0 +1,15 @@
+.smb-section-side-heading {
+  &__title {
+    text-align: left;
+
+    &::after {
+      margin-left: 0;
+    }
+  }
+
+  &__body {
+    @include _media-max(sm) {
+      @include section-body();
+    }
+  }
+}

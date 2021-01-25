@@ -1,0 +1,36 @@
+.smb-section {
+  @extend %section;
+
+  &__subtitle {
+    @extend %section-subtitle;
+    color: var-color-accent();
+  }
+
+  &__title {
+    @extend %section-title;
+
+    &::after {
+      background-color: var-color-accent();
+    }
+  }
+
+  &__lede {
+    @extend %section-lede;
+  }
+
+  &__title,
+  &__lede {
+    & + .smb-section__body {
+      @extend %section-body;
+    }
+  }
+
+  &__body {
+    @extend %entry-content;
+  }
+
+  > .#{ $_prefix }c-container,
+  &__inner > .#{ $_prefix }c-container {
+    @include container-padding();
+  }
+}

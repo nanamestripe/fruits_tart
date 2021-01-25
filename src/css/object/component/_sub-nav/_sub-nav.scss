@@ -1,0 +1,25 @@
+.#{ $_prefix }c-sub-nav {
+  @include _font-size-line-height($_base-font-size-px - 4);
+  @include _padding(.25, 0);
+
+  .#{ $_prefix }c-navbar {
+    &__item {
+      @include _margin(0, .25);
+      color: $_color-gray; // For IE11
+      color: _var-color-gray();
+
+      > a {
+        color: inherit;
+        text-decoration: none;
+
+        @include _hover() {
+          text-decoration: underline;
+        }
+      }
+
+      &.sm-nav-menu-item-highlight {
+        color: var-color-accent();
+      }
+    }
+  }
+}

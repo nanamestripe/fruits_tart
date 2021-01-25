@@ -1,0 +1,995 @@
+{
+    "packages": [
+        {
+            "name": "inc2734/wp-adsense",
+            "version": "1.0.1",
+            "version_normalized": "1.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inc2734/wp-adsense.git",
+                "reference": "7ead7e5a66b3b03de62477e6502dda2b9c44e32b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inc2734/wp-adsense/zipball/7ead7e5a66b3b03de62477e6502dda2b9c44e32b",
+                "reference": "7ead7e5a66b3b03de62477e6502dda2b9c44e32b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
+                "phpcompatibility/phpcompatibility-wp": "*",
+                "phpmd/phpmd": "2.*",
+                "phpunit/phpunit": "7.*",
+                "squizlabs/php_codesniffer": "*",
+                "wp-coding-standards/wpcs": "*"
+            },
+            "time": "2020-02-04T04:08:16+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Inc2734\\WP_Adsense\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Takashi Kitajima",
+                    "email": "inc@2inc.org"
+                }
+            ],
+            "install-path": "../inc2734/wp-adsense"
+        },
+        {
+            "name": "inc2734/wp-awesome-components",
+            "version": "1.0.9",
+            "version_normalized": "1.0.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inc2734/wp-awesome-components.git",
+                "reference": "0b49ac530601369576a14bf5fe32a1e48f9a33c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inc2734/wp-awesome-components/zipball/0b49ac530601369576a14bf5fe32a1e48f9a33c3",
+                "reference": "0b49ac530601369576a14bf5fe32a1e48f9a33c3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
+                "phpcompatibility/phpcompatibility-wp": "*",
+                "phpmd/phpmd": "2.*",
+                "phpunit/phpunit": "7.*",
+                "squizlabs/php_codesniffer": "*",
+                "wp-coding-standards/wpcs": "*"
+            },
+            "time": "2020-02-04T04:35:04+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Inc2734\\WP_Awesome_Components\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Takashi Kitajima",
+                    "email": "inc@2inc.org"
+                }
+            ],
+            "description": "A library to add some awesome components for WordPress.",
+            "install-path": "../inc2734/wp-awesome-components"
+        },
+        {
+            "name": "inc2734/wp-awesome-widgets",
+            "version": "12.1.3",
+            "version_normalized": "12.1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inc2734/wp-awesome-widgets.git",
+                "reference": "4c8d06481ed663b316a1f10df881d9a1e43c802c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inc2734/wp-awesome-widgets/zipball/4c8d06481ed663b316a1f10df881d9a1e43c802c",
+                "reference": "4c8d06481ed663b316a1f10df881d9a1e43c802c",
+                "shasum": ""
+            },
+            "require": {
+                "inc2734/wp-adsense": "^1.0",
+                "inc2734/wp-contents-outline": "^5.1",
+                "inc2734/wp-plugin-view-controller": "^1.1",
+                "inc2734/wp-profile-box": "^2.3",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "sirbrillig/phpcs-variable-analysis": "^2.10",
+                "squizlabs/php_codesniffer": "^3.5",
+                "wp-coding-standards/wpcs": "^2.3",
+                "wp-phpunit/wp-phpunit": "^5.6"
+            },
+            "time": "2020-12-12T17:44:23+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Inc2734\\WP_Awesome_Widgets\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Takashi Kitajima",
+                    "email": "inc@2inc.org"
+                }
+            ],
+            "description": "A library to add some awesome widgets for WordPress.",
+            "install-path": "../inc2734/wp-awesome-widgets"
+        },
+        {
+            "name": "inc2734/wp-basis",
+            "version": "7.5.1",
+            "version_normalized": "7.5.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inc2734/wp-basis.git",
+                "reference": "3239ff3ddd89d11ae7d014ca1efbcdc95b71661e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inc2734/wp-basis/zipball/3239ff3ddd89d11ae7d014ca1efbcdc95b71661e",
+                "reference": "3239ff3ddd89d11ae7d014ca1efbcdc95b71661e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "sirbrillig/phpcs-variable-analysis": "^2.8",
+                "squizlabs/php_codesniffer": "^3.5",
+                "wp-coding-standards/wpcs": "^2.2",
+                "wp-phpunit/wp-phpunit": "^5.5"
+            },
+            "time": "2021-01-15T14:09:04+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Inc2734\\WP_Basis\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Takashi Kitajima",
+                    "email": "inc@2inc.org"
+                }
+            ],
+            "description": "This library customizes HTML to use sass-basis in WordPress.",
+            "install-path": "../inc2734/wp-basis"
+        },
+        {
+            "name": "inc2734/wp-breadcrumbs",
+            "version": "3.1.6",
+            "version_normalized": "3.1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inc2734/wp-breadcrumbs.git",
+                "reference": "a7bb2b8a11a9444ad8dcb159f3c82b54932d2a4c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inc2734/wp-breadcrumbs/zipball/a7bb2b8a11a9444ad8dcb159f3c82b54932d2a4c",
+                "reference": "a7bb2b8a11a9444ad8dcb159f3c82b54932d2a4c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "sirbrillig/phpcs-variable-analysis": "^2.8",
+                "squizlabs/php_codesniffer": "^3.5",
+                "wp-coding-standards/wpcs": "^2.2",
+                "wp-phpunit/wp-phpunit": "^5.5"
+            },
+            "time": "2020-12-02T16:19:41+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Inc2734\\WP_Breadcrumbs\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Takashi Kitajima",
+                    "email": "inc@2inc.org"
+                }
+            ],
+            "description": "A library for WordPress breadcrumbs.",
+            "install-path": "../inc2734/wp-breadcrumbs"
+        },
+        {
+            "name": "inc2734/wp-contents-outline",
+            "version": "5.1.2",
+            "version_normalized": "5.1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inc2734/wp-contents-outline.git",
+                "reference": "3c5a48b3bfd3239738e47052872e7a5d7af88378"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inc2734/wp-contents-outline/zipball/3c5a48b3bfd3239738e47052872e7a5d7af88378",
+                "reference": "3c5a48b3bfd3239738e47052872e7a5d7af88378",
+                "shasum": ""
+            },
+            "require": {
+                "inc2734/wp-plugin-view-controller": "^1.1",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "sirbrillig/phpcs-variable-analysis": "^2.10",
+                "squizlabs/php_codesniffer": "^3.5",
+                "wp-coding-standards/wpcs": "^2.3",
+                "wp-phpunit/wp-phpunit": "^5.5"
+            },
+            "time": "2020-12-08T06:24:16+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Inc2734\\WP_Contents_Outline\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Takashi Kitajima",
+                    "email": "inc@2inc.org"
+                }
+            ],
+            "description": "A library for WordPress. This adds contents outline of the post.",
+            "install-path": "../inc2734/wp-contents-outline"
+        },
+        {
+            "name": "inc2734/wp-custom-css-to-editor",
+            "version": "0.1.1",
+            "version_normalized": "0.1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inc2734/wp-custom-css-to-editor.git",
+                "reference": "957086e47fb929dd40599457580426c5a3e06b8b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inc2734/wp-custom-css-to-editor/zipball/957086e47fb929dd40599457580426c5a3e06b8b",
+                "reference": "957086e47fb929dd40599457580426c5a3e06b8b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
+                "phpcompatibility/phpcompatibility-wp": "*",
+                "phpmd/phpmd": "2.*",
+                "phpunit/phpunit": "7.*",
+                "squizlabs/php_codesniffer": "*",
+                "wp-coding-standards/wpcs": "*"
+            },
+            "time": "2020-02-04T04:45:37+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Inc2734\\WP_Custom_CSS_To_Editor\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Takashi Kitajima",
+                    "email": "inc@2inc.org"
+                }
+            ],
+            "install-path": "../inc2734/wp-custom-css-to-editor"
+        },
+        {
+            "name": "inc2734/wp-customizer-framework",
+            "version": "7.1.2",
+            "version_normalized": "7.1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inc2734/wp-customizer-framework.git",
+                "reference": "93dc51ac248e9ec21b03c64e42c2a9903f45511c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inc2734/wp-customizer-framework/zipball/93dc51ac248e9ec21b03c64e42c2a9903f45511c",
+                "reference": "93dc51ac248e9ec21b03c64e42c2a9903f45511c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "sirbrillig/phpcs-variable-analysis": "^2.8",
+                "squizlabs/php_codesniffer": "^3.5",
+                "wp-coding-standards/wpcs": "^2.2",
+                "wp-phpunit/wp-phpunit": "^5.5"
+            },
+            "time": "2020-11-30T15:52:08+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Inc2734\\WP_Customizer_Framework\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Takashi Kitajima",
+                    "email": "inc@2inc.org"
+                }
+            ],
+            "description": "A library for WordPress Customizer.",
+            "install-path": "../inc2734/wp-customizer-framework"
+        },
+        {
+            "name": "inc2734/wp-github-theme-updater",
+            "version": "3.1.0",
+            "version_normalized": "3.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inc2734/wp-github-theme-updater.git",
+                "reference": "6224d6e820e33ef71a711a39fb8cd30587cd92f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inc2734/wp-github-theme-updater/zipball/6224d6e820e33ef71a711a39fb8cd30587cd92f6",
+                "reference": "6224d6e820e33ef71a711a39fb8cd30587cd92f6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
+                "phpcompatibility/phpcompatibility-wp": "*",
+                "phpunit/phpunit": "7.*",
+                "squizlabs/php_codesniffer": "*",
+                "wp-coding-standards/wpcs": "*"
+            },
+            "time": "2020-09-01T05:18:00+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Inc2734\\WP_GitHub_Theme_Updater\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Takashi Kitajima",
+                    "email": "inc@2inc.org"
+                }
+            ],
+            "description": "A library for WordPress that automatic theme updater with GitHub API.",
+            "install-path": "../inc2734/wp-github-theme-updater"
+        },
+        {
+            "name": "inc2734/wp-google-fonts",
+            "version": "0.2.0",
+            "version_normalized": "0.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inc2734/wp-google-fonts.git",
+                "reference": "77455d4ec1531327f5d64e038f297e0e58e6dfda"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inc2734/wp-google-fonts/zipball/77455d4ec1531327f5d64e038f297e0e58e6dfda",
+                "reference": "77455d4ec1531327f5d64e038f297e0e58e6dfda",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
+                "phpcompatibility/phpcompatibility-wp": "*",
+                "phpmd/phpmd": "2.*",
+                "phpunit/phpunit": "7.*",
+                "squizlabs/php_codesniffer": "*",
+                "wp-coding-standards/wpcs": "*"
+            },
+            "time": "2020-03-03T05:20:40+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Inc2734\\WP_Google_Fonts\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Takashi Kitajima",
+                    "email": "inc@2inc.org"
+                }
+            ],
+            "install-path": "../inc2734/wp-google-fonts"
+        },
+        {
+            "name": "inc2734/wp-helper",
+            "version": "0.3.2",
+            "version_normalized": "0.3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inc2734/wp-helper.git",
+                "reference": "4bff4a0b522112a03ffb4f894c4810bc97bd2b67"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inc2734/wp-helper/zipball/4bff4a0b522112a03ffb4f894c4810bc97bd2b67",
+                "reference": "4bff4a0b522112a03ffb4f894c4810bc97bd2b67",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "sirbrillig/phpcs-variable-analysis": "^2.8",
+                "squizlabs/php_codesniffer": "^3.5",
+                "wp-coding-standards/wpcs": "^2.2",
+                "wp-phpunit/wp-phpunit": "^5.5"
+            },
+            "time": "2020-11-12T06:46:19+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Inc2734\\WP_Helper\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Takashi Kitajima",
+                    "email": "inc@2inc.org"
+                }
+            ],
+            "install-path": "../inc2734/wp-helper"
+        },
+        {
+            "name": "inc2734/wp-like-me-box",
+            "version": "2.0.1",
+            "version_normalized": "2.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inc2734/wp-like-me-box.git",
+                "reference": "1dccad3068e30fb5f9af8286f3453c769c7847b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inc2734/wp-like-me-box/zipball/1dccad3068e30fb5f9af8286f3453c769c7847b5",
+                "reference": "1dccad3068e30fb5f9af8286f3453c769c7847b5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
+                "phpcompatibility/phpcompatibility-wp": "*",
+                "phpmd/phpmd": "2.*",
+                "phpunit/phpunit": "7.*",
+                "squizlabs/php_codesniffer": "*",
+                "wp-coding-standards/wpcs": "*"
+            },
+            "time": "2020-09-04T07:30:38+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Inc2734\\WP_Like_Me_Box\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Takashi Kitajima",
+                    "email": "inc@2inc.org"
+                }
+            ],
+            "description": "A library for WordPress that added Facebook like me box for article.",
+            "install-path": "../inc2734/wp-like-me-box"
+        },
+        {
+            "name": "inc2734/wp-oembed-blog-card",
+            "version": "9.0.7",
+            "version_normalized": "9.0.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inc2734/wp-oembed-blog-card.git",
+                "reference": "fb7e3eb0ed24f54f353f3e532b164d09e89c8ca4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inc2734/wp-oembed-blog-card/zipball/fb7e3eb0ed24f54f353f3e532b164d09e89c8ca4",
+                "reference": "fb7e3eb0ed24f54f353f3e532b164d09e89c8ca4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "sirbrillig/phpcs-variable-analysis": "^2.10",
+                "squizlabs/php_codesniffer": "^3.5",
+                "wp-coding-standards/wpcs": "^2.3",
+                "wp-phpunit/wp-phpunit": "^5.5"
+            },
+            "time": "2020-12-08T16:31:17+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Inc2734\\WP_OEmbed_Blog_Card\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Takashi Kitajima",
+                    "email": "inc@2inc.org"
+                }
+            ],
+            "description": "A library for WordPress oEmbed Blog Card.",
+            "install-path": "../inc2734/wp-oembed-blog-card"
+        },
+        {
+            "name": "inc2734/wp-ogp",
+            "version": "2.0.2",
+            "version_normalized": "2.0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inc2734/wp-ogp.git",
+                "reference": "0c4c3c7413a5ed963cb79d0409b612e4f2b569f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inc2734/wp-ogp/zipball/0c4c3c7413a5ed963cb79d0409b612e4f2b569f1",
+                "reference": "0c4c3c7413a5ed963cb79d0409b612e4f2b569f1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
+                "phpcompatibility/phpcompatibility-wp": "*",
+                "phpmd/phpmd": "2.*",
+                "phpunit/phpunit": "7.*",
+                "squizlabs/php_codesniffer": "*",
+                "wp-coding-standards/wpcs": "*"
+            },
+            "time": "2020-02-04T05:26:25+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Inc2734\\WP_OGP\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Takashi Kitajima",
+                    "email": "inc@2inc.org"
+                }
+            ],
+            "description": "A library for WordPress OGP.",
+            "install-path": "../inc2734/wp-ogp"
+        },
+        {
+            "name": "inc2734/wp-page-speed-optimization",
+            "version": "3.0.6",
+            "version_normalized": "3.0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inc2734/wp-page-speed-optimization.git",
+                "reference": "a7cc78be9fb54e847a278d4e901d9d05c2cece37"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inc2734/wp-page-speed-optimization/zipball/a7cc78be9fb54e847a278d4e901d9d05c2cece37",
+                "reference": "a7cc78be9fb54e847a278d4e901d9d05c2cece37",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "sirbrillig/phpcs-variable-analysis": "^2.10",
+                "squizlabs/php_codesniffer": "^3.5",
+                "wp-coding-standards/wpcs": "^2.3",
+                "wp-phpunit/wp-phpunit": "^5.5"
+            },
+            "time": "2020-12-08T10:37:29+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Inc2734\\WP_Page_Speed_Optimization\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Takashi Kitajima",
+                    "email": "inc@2inc.org"
+                }
+            ],
+            "description": "A library for WordPress.",
+            "install-path": "../inc2734/wp-page-speed-optimization"
+        },
+        {
+            "name": "inc2734/wp-plugin-view-controller",
+            "version": "1.1.1",
+            "version_normalized": "1.1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inc2734/wp-plugin-view-controller.git",
+                "reference": "35b9071002fd467701a7e9c87d463e573e61f197"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inc2734/wp-plugin-view-controller/zipball/35b9071002fd467701a7e9c87d463e573e61f197",
+                "reference": "35b9071002fd467701a7e9c87d463e573e61f197",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "sirbrillig/phpcs-variable-analysis": "^2.8",
+                "squizlabs/php_codesniffer": "^3.5",
+                "wp-coding-standards/wpcs": "^2.2",
+                "wp-phpunit/wp-phpunit": "^5.5"
+            },
+            "time": "2020-11-17T17:30:37+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Inc2734\\WP_Plugin_View_Controller\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Takashi Kitajima",
+                    "email": "inc@2inc.org"
+                }
+            ],
+            "install-path": "../inc2734/wp-plugin-view-controller"
+        },
+        {
+            "name": "inc2734/wp-profile-box",
+            "version": "2.4.0",
+            "version_normalized": "2.4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inc2734/wp-profile-box.git",
+                "reference": "a11ccdd1443c9f0eac122e1dbff32ca3f81efc9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inc2734/wp-profile-box/zipball/a11ccdd1443c9f0eac122e1dbff32ca3f81efc9a",
+                "reference": "a11ccdd1443c9f0eac122e1dbff32ca3f81efc9a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "sirbrillig/phpcs-variable-analysis": "^2.8",
+                "squizlabs/php_codesniffer": "^3.5",
+                "wp-coding-standards/wpcs": "^2.2",
+                "wp-phpunit/wp-phpunit": "^5.5"
+            },
+            "time": "2020-12-02T17:46:50+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Inc2734\\WP_Profile_Box\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Takashi Kitajima",
+                    "email": "inc@2inc.org"
+                }
+            ],
+            "description": "A library to add profile box for WordPress.",
+            "install-path": "../inc2734/wp-profile-box"
+        },
+        {
+            "name": "inc2734/wp-pure-css-gallery",
+            "version": "3.0.0",
+            "version_normalized": "3.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inc2734/wp-pure-css-gallery.git",
+                "reference": "3acc025381afe1a9dfb5054c0fef16cda4bcb8b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inc2734/wp-pure-css-gallery/zipball/3acc025381afe1a9dfb5054c0fef16cda4bcb8b3",
+                "reference": "3acc025381afe1a9dfb5054c0fef16cda4bcb8b3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
+                "phpcompatibility/phpcompatibility-wp": "*",
+                "phpmd/phpmd": "2.*",
+                "phpunit/phpunit": "7.*",
+                "squizlabs/php_codesniffer": "*",
+                "wp-coding-standards/wpcs": "*"
+            },
+            "time": "2020-07-17T06:40:23+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Inc2734\\WP_Pure_CSS_Gallery\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Takashi Kitajima",
+                    "email": "inc@2inc.org"
+                }
+            ],
+            "description": "A library to change WordPress gallery to pure css gallery.",
+            "install-path": "../inc2734/wp-pure-css-gallery"
+        },
+        {
+            "name": "inc2734/wp-seo",
+            "version": "4.2.1",
+            "version_normalized": "4.2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inc2734/wp-seo.git",
+                "reference": "e22d36d72108ebec320481172d172ba7b990ccb9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inc2734/wp-seo/zipball/e22d36d72108ebec320481172d172ba7b990ccb9",
+                "reference": "e22d36d72108ebec320481172d172ba7b990ccb9",
+                "shasum": ""
+            },
+            "require": {
+                "inc2734/wp-ogp": "^2.0",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "sirbrillig/phpcs-variable-analysis": "^2.10",
+                "squizlabs/php_codesniffer": "^3.5",
+                "wp-coding-standards/wpcs": "^2.3",
+                "wp-phpunit/wp-phpunit": "^5.5"
+            },
+            "time": "2020-12-08T10:48:12+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Inc2734\\WP_SEO\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Takashi Kitajima",
+                    "email": "inc@2inc.org"
+                }
+            ],
+            "description": "A library for SEO of WordPress.",
+            "install-path": "../inc2734/wp-seo"
+        },
+        {
+            "name": "inc2734/wp-share-buttons",
+            "version": "6.0.4",
+            "version_normalized": "6.0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inc2734/wp-share-buttons.git",
+                "reference": "d9a52de80c233451f58cc47fbc9d9729bdb25c32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inc2734/wp-share-buttons/zipball/d9a52de80c233451f58cc47fbc9d9729bdb25c32",
+                "reference": "d9a52de80c233451f58cc47fbc9d9729bdb25c32",
+                "shasum": ""
+            },
+            "require": {
+                "inc2734/wp-ogp": "^2.0",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "sirbrillig/phpcs-variable-analysis": "^2.10",
+                "squizlabs/php_codesniffer": "^3.5",
+                "wp-coding-standards/wpcs": "^2.3",
+                "wp-phpunit/wp-phpunit": "^5.6"
+            },
+            "time": "2020-12-17T04:45:11+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Inc2734\\WP_Share_Buttons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Takashi Kitajima",
+                    "email": "inc@2inc.org",
+                    "homepage": "https://2inc.org"
+                }
+            ],
+            "description": "A library for WordPress theme that adds social share buttons.",
+            "install-path": "../inc2734/wp-share-buttons"
+        },
+        {
+            "name": "inc2734/wp-view-controller",
+            "version": "12.1.7",
+            "version_normalized": "12.1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inc2734/wp-view-controller.git",
+                "reference": "4c8262cdec5ca044a232ef56781e8c14615b7ad0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inc2734/wp-view-controller/zipball/4c8262cdec5ca044a232ef56781e8c14615b7ad0",
+                "reference": "4c8262cdec5ca044a232ef56781e8c14615b7ad0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "sirbrillig/phpcs-variable-analysis": "^2.10",
+                "squizlabs/php_codesniffer": "^3.5",
+                "wp-coding-standards/wpcs": "^2.3",
+                "wp-phpunit/wp-phpunit": "^5.6"
+            },
+            "time": "2020-12-12T17:04:44+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Inc2734\\WP_View_Controller\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Takashi Kitajima",
+                    "email": "inc@2inc.org"
+                }
+            ],
+            "description": "A library for WordPress theme view controller.",
+            "install-path": "../inc2734/wp-view-controller"
+        }
+    ],
+    "dev": false,
+    "dev-package-names": []
+}

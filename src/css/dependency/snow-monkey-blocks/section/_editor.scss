@@ -1,0 +1,7 @@
+.editor-styles-wrapper {
+  .smb-section {
+    &__body {
+      @extend %entry-content;
+    }
+  }
+}

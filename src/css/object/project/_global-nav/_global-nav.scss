@@ -1,0 +1,189 @@
+.#{ $_prefix }p-global-nav {
+  &[aria-hidden="true"] {
+    visibility: hidden;
+  }
+
+  .#{ $_prefix }c-navbar {
+    &__item {
+      > a {
+        flex-direction: column;
+        color: inherit;
+        @include _font-size-line-height($_base-font-size-px - 2);
+        font-weight: bold;
+        @include _padding(.75);
+        @include _transition(background-color, color);
+
+        > span {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+
+        > small {
+          display: block;
+          @include _font-size-line-height($_base-font-size-px - 6);
+          font-weight: normal;
+        }
+      }
+
+      &.sm-nav-menu-item-highlight {
+        background-color: var-color-accent();
+        color: $_color-white !important; // For IE11
+        color: _var-color-white() !important;
+
+        &::after {
+          display: none;
+        }
+
+        @include _hover(lg) {
+          > a {
+            background-color: rgba(#fff, .05);
+          }
+        }
+      }
+
+      > .#{ $_prefix }c-navbar__submenu {
+        left: 50%;
+        transform: translateX(-50%);
+
+        &::before {
+          content: '';
+          display: block;
+          @include _triangle-top(16px, 10px, var-color-accent());
+          position: absolute;
+          top: -10px;
+          left: calc(50% - 8px);
+        }
+      }
+    }
+
+    &__submenu {
+      background-color: var-color-accent();
+      z-index: 1;
+    }
+
+    &__subitem {
+      @include _font-size-line-height($_base-font-size-px - 2);
+      color: $_color-white; // For IE11
+      color: _var-color-white();
+
+      &.sm-nav-menu-item-highlight {
+        background-color: var-color-sub-accent();
+      }
+
+      > a {
+        position: relative;
+        color: inherit;
+        @include _padding(.5rem, 1rem);
+        @include _transition(background-color, color);
+      }
+
+      @include _hover(lg) {
+        > a {
+          background-color: rgba(#fff, .05);
+        }
+      }
+
+      .#{ $_prefix }c-navbar__subitem:first-child > a:before {
+        content: '';
+        @include _position(absolute, -20px, -20px, -20px, -20px);
+      }
+    }
+
+    .#{ $_prefix }c-navbar__toggle {
+      @include _transition(transform);
+      z-index: 2; // vs .c-navbar__subitem > a::before
+    }
+
+    .#{ $_prefix }c-navbar__item {
+      .#{ $_prefix }c-navbar__toggle {
+        transform: rotate(90deg);
+
+        &[aria-expanded="true"] {
+          transform: rotate(-90deg);
+        }
+      }
+    }
+
+    .#{ $_prefix }c-navbar__subitem {
+      .#{ $_prefix }c-navbar__toggle {
+        color: $_color-white; // For IE11
+        color: _var-color-white();
+        transform: rotate(0);
+
+        .#{ $_prefix }c-ic-angle-right::before {
+          border-color: $_color-white; // For IE11
+          border-color: _var-color-white();
+        }
+
+        &[aria-expanded="true"] {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  &--vertical {
+    display: flex;
+
+    .#{ $_prefix }c-navbar {
+      display: inline-flex;
+
+      &__item {
+        display: block;
+
+        > a {
+          display: block;
+          writing-mode: vertical-rl;
+          text-align: left;
+
+          > span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  &--hover-text-color {
+    .#{ $_prefix }c-navbar {
+      &__item {
+        &[data-active-menu] {
+          color: var-color-accent();
+        }
+
+        @include _hover(lg) {
+          color: var-color-accent();
+        }
+      }
+    }
+  }
+
+  &--hover-underline {
+    .#{ $_prefix }c-navbar {
+      &__item {
+        &::after {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          content: '';
+          height: 1px;
+          @include _transition(background-color);
+        }
+
+        &[data-active-menu] {
+          &::after {
+            background-color: var-color-accent();
+          }
+        }
+
+        @include _hover(lg) {
+          &::after {
+            background-color: var-color-accent();
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.#{ $_prefix }c-drawer {
+  $drawer-font-size: $_base-font-size-px - 2;
+
+  z-index: 100000;
+  background-color: var-color-accent();
+  color: $_color-white; // For IE11
+  color: _var-color-white();
+  @include _font-size-line-height($drawer-font-size);
+
+  a {
+    color: inherit;
+  }
+
+  .#{$_prefix}c-ic-angle-right {
+    transform: translateY(0) translateX(-.15em);
+
+    &::before {
+      border-color: $_color-white; // For IE11
+      border-color: _var-color-white();
+    }
+  }
+
+  &__toggle {
+    top: _space(.25);
+    @include _square(_px2rem(_vertical-rhythm($drawer-font-size)));
+    @include _transition(transform);
+    transform: rotate(90deg);
+
+    &[aria-expanded="true"] {
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__menu {
+    @include _padding-top(.25);
+    @include _padding-bottom(.25);
+  }
+
+  &__item {
+    @include _padding(.25, .5);
+
+    &.menu-item-has-children {
+      @include _padding-right(1.25);
+    }
+
+    &.sm-nav-menu-item-highlight {
+      background-color: var-color-sub-accent();
+
+      &:first-child {
+        @include _margin-top(-.25);
+      }
+
+      &:last-child {
+        @include _margin-bottom(-.25);
+      }
+    }
+  }
+
+  &__submenu[aria-hidden="false"] {
+    @include _margin(0, -1.25, -.25, 0);
+    @include _padding(.25, 0);
+  }
+
+  &__subitem {
+    @include _padding(.25, .5);
+
+    &:last-child {
+      @include _margin-bottom(-.25);
+    }
+
+    &.menu-item-has-children {
+      @include _padding-right(1.25);
+    }
+
+    &.sm-nav-menu-item-highlight {
+      background-color: var-color-sub-accent();
+    }
+  }
+
+  &__sub-nav {
+    @include _font-size-line-height($_base-font-size-px - 4);
+
+    * + & {
+      border-top: 1px solid rgba(#fff, .4);
+    }
+
+    .#{ $_prefix }c-drawer__submenu {
+      @include _margin-right(-.25);
+    }
+  }
+}
+
+[id="drawer-nav"] {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+[id="drawer-nav"]:not(.#{ $_prefix }c-drawer--inverse) {
+  padding-left: constant(safe-area-inset-left);
+  padding-left: env(safe-area-inset-left);
+  width: calc(#{ $_base-line-height * 10 } + constant(safe-area-inset-left));
+  width: calc(#{ $_base-line-height * 10 } + env(safe-area-inset-left));
+}
+
+[id="drawer-nav"].#{ $_prefix }c-drawer--inverse {
+  padding-right: constant(safe-area-inset-right);
+  padding-right: env(safe-area-inset-right);
+  width: calc(#{ $_base-line-height * 10 } + constant(safe-area-inset-right));
+  width: calc(#{ $_base-line-height * 10 } + env(safe-area-inset-right));
+}

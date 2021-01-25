@@ -1,0 +1,54 @@
+@mixin blockquote {
+  position: relative;
+  background-image: url(#{ $img-path }/blockquote/top.svg), url(#{ $img-path }/blockquote/bottom.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0, 100% 100%;
+  background-size: 35px;
+  border: none;
+  @include _content(.5);
+
+  &,
+  &.is-large,
+  &.is-style-large {
+    @include _padding(.75, .5, .5, 1.5);
+  }
+
+  @include _media-min(md) {
+    background-size: 70px;
+
+    &,
+    &.is-large,
+    &.is-style-large {
+      @include _margin-right(1);
+      @include _margin-left(1);
+      @include _padding(1, 1, .75, 2);
+    }
+  }
+
+  &::before {
+    content: '';
+    @include _position(absolute, $_base-font-size-px, null, null, $_base-font-size-px);
+    display: block;
+    @include _square($_base-font-size-px + 2);
+    background-image: url(#{ $img-path }/blockquote/icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include _media-min(md) {
+      @include _square($_base-font-size-px * 1.5);
+    }
+  }
+
+  cite {
+    @extend %blockquote__cite;
+  }
+}
+
+@mixin blockquote__cite {
+  @include _margin-top(.5);
+  display: block;
+  @include _font-size-line-height($_base-font-size-px - 2);
+  color: $_color-gray; // For IE11
+  color: _var-color-gray();
+  font-style: italic;
+}

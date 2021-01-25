@@ -1,0 +1,15 @@
+.wp-block-categories {
+  @include widget-list-base();
+
+  .children {
+    @include widget-list-base();
+    @include _margin-top(.25);
+    margin-left: 1em;
+  }
+
+  &.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: table;
+  }
+}

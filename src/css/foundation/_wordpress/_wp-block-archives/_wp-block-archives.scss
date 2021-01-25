@@ -1,0 +1,9 @@
+.wp-block-archives {
+  @include widget-list-base();
+
+  &.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: table;
+  }
+}

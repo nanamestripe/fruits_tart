@@ -1,0 +1,61 @@
+@charset 'utf-8';
+
+@import 'core/core';
+@import 'adminbar';
+
+.block-editor-editor-skeleton__content {
+  max-width: 100%;
+}
+
+.block-editor-editor-skeleton__content {
+  overflow-x: hidden;
+}
+
+// サイドバーの横幅分 alignfull, alignwide から引く
+.edit-post-layout.is-mode-visual.is-sidebar-opened {
+  @include _media-min(782px) {
+    --body-margin-left: 280px;
+  }
+}
+
+.l-body--one-column-slim,
+.l-body--blank-slim {
+  .editor-styles-wrapper {
+    .edit-post-visual-editor__post-title-wrapper,
+    .block-editor-block-list__layout.is-root-container {
+      --wp-block-width: 46em;
+    }
+  }
+}
+
+.l-body--right-sidebar,
+.l-body--left-sidebar {
+  .editor-styles-wrapper {
+    .edit-post-visual-editor__post-title-wrapper,
+    .block-editor-block-list__layout.is-root-container {
+      $container_margin: _space(1);
+      $sidebar_margin: _space(1);
+
+      max-width: calc(var(--wp-block-width) - 336px - #{ $sidebar_margin } - #{ $container_margin } * 2);
+    }
+  }
+}
+
+// @see src/css/object/component/_entries.scss
+.l-body--one-column-slim,
+.l-body--blank-slim,
+.l-body--right-sidebar,
+.l-body--left-sidebar {
+  .editor-styles-wrapper {
+    .#{ $_prefix }c-entries {
+      &--rich-media,
+      &--panel {
+        .#{ $_prefix }c-entries__item {
+          @include _media-min(lg) {
+            @include _lattice__col--width(1 / 2 * 100%);
+          }
+        }
+      }
+    }
+  }
+}

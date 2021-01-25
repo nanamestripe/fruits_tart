@@ -1,0 +1,10 @@
+.#{ $_prefix }p-footer-sub-nav {
+  border-top: 1px solid transparent;
+  border-top-color: _lighter($_color-gray); // For IE11
+  border-top-color: _var-lighter-color-gray();
+
+  @include _media-max(md) {
+    overflow: scroll;
+    white-space: nowrap;
+  }
+}
